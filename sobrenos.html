@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/w3css.css"/>
+  <title>Atividade com CSS e Bootstrap-Sobre Nós</title>
+</head>
+<header>
+
+</header>
+
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">&larr;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Início</a>
+    <a href="sobrenos.html" class="w3-bar-item w3-button">Sobre Nos</a>
+    <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+  </div>
+  
+  <div id="main">
+  
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+  
+    </div>
+  </div>
+  
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  </script>  
+ 
+  <div class="jumbotron text-center">
+    <h1>Sobre Nós</h1>
+    <img src="_imagens/sobrenos.png" alt="implatação" style="width: 200px;"class="mx-auto d-block"<br>
+  </div>
+    
+
+  <div class="container">
+    <div class="container pt-3"><h1><small> A Lutech é uma empresa que visa facilitar o controle em sistemas de forma
+      que fique de fácil acesso e adptação para o usúario ou cliente, o obejtivo
+      e criar uma interface totalmente amigável e de simples assimilação.Produz soluções objetivas
+       e focadas.</small></h1>
+    </div>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Lutech Copyleft.All directs free</p>
+  </div>
+</body>

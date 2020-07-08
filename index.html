@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/w3css.css" />
+
+  <title>Atividade com CSS e Bootstrap</title>
+</head>
+<header>
+
+</header>
+
+
+<body>
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">&larr;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Início</a>
+    <a href="sobrenos.html" class="w3-bar-item w3-button">Sobre Nos</a>
+    <a href="contato.html" class="w3-bar-item w3-button">Contato</a>
+  </div>
+
+  <div id="main">
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xxlarge w3-margin-bottom" onclick="w3_open()">&#9776;</button>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+
+    <div class="jumbotron text-center">
+
+      <h1 class="text-dark">Lutech</h1>
+      <h3>Soluções em Técnologia.</h3>
+      <img src="_imagens/lginicial.png" alt="implatação" style="width: 200px;" class="mx-auto d-block" <br>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="_imagens/estoque.png" class="img-fluid" alt="Imagem responsiva"> <br>
+          <h3>Sistemas de controle de estoque</h3>
+          <p>A Lutech possui soluções em sistemas de controle de estoque, totalmente integrado e adaptavél.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="_imagens/mercado.png" class="img-fluid" alt="Imagem responsiva"> <br>
+          <h3>Sistemas de vendas</h3>
+          <p>Temos uma gama de softwares para sistemas de vendas integrado com Sefaz possibilitandoa emissão de NF-e,
+            pronto para receber pinpads e terminais externos(como maquinas de cartões, impressoras termicas e outras).
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img src="_imagens/transporte.png" class="img-fluid" alt="Imagem responsiva"> <br><br><br><br><br><br><br>
+          <h3>Sistemas de monitoramento de frota</h3>
+          <p>Sistema de fácil integração com módulos especificos de controle de manutenção, abastecimento,
+            quadro de funcionários, estoque e muito mais!Variável de acordo com sua necessidade.
+
+          </p>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+      </div><br><br>
+
+
+      <div class="container text-center">
+
+
+        <p>Lutech Copyleft.All directs free</p>
+      </div>
+</body>
+
+</html>
